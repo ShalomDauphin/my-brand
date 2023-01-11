@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("pI_2mBI1o0Vf6qI_Z");
+        })();
+    </script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -284,10 +293,10 @@
         <span>Connect With Us</span>
     </div>
     <div class="contact-form">
-        <form action="" id="contactForm">
+        <form action="" id="contactForm" onsubmit="sendEmail()">
             <div class="alert">Message sent Successfully!</div>
 
-            
+
             <input type="text" id="name" placeholder="Your Name" />
             <input type="email" name="" id="email" placeholder="Your Email" />
             <textarea name="" id="msgContent" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
@@ -305,8 +314,11 @@
             <a href="#"><i class="bx bxl-youtube"></i></a>
         </div>
     </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="./js/contact.js"></script>
 <script src="./js/script.js"></script>
+<!-- <script src="./js/mail.js"></script> -->
+<script src="./js/sendmail.js"></script>
 </body>
 </html>
