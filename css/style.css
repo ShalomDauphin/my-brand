@@ -674,6 +674,17 @@ input:focus {
     color: #464647;
 }
 
+.alert{
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
+
 /* Making Responsive */
 @media (max-width: 991px) {
     header {

@@ -284,11 +284,14 @@
         <span>Connect With Us</span>
     </div>
     <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" name="" id="" placeholder="Your Email" />
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
-            <input type="button" value="Send" class="contact-button" />
+        <form action="" id="contactForm">
+            <div class="alert">Message sent Successfully!</div>
+
+            
+            <input type="text" id="name" placeholder="Your Name" />
+            <input type="email" name="" id="email" placeholder="Your Email" />
+            <textarea name="" id="msgContent" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+            <input type="submit" value="Submit" class="contact-button" />
         </form>
     </div>
 </section>
@@ -302,6 +305,8 @@
             <a href="#"><i class="bx bxl-youtube"></i></a>
         </div>
     </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./js/contact.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
