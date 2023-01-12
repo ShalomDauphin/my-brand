@@ -34,22 +34,29 @@
         <div class="wrapper">
             <h1>Login</h1>
             <form action="">
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
+                <input type="text" id="email" placeholder="Email" required/>
+                <input type="password" id="password" placeholder="Password" required/>
                 <div class="recover">
                     <a href="#">Forgot Password?</a>
                 </div>
             </form>
             <!-- <button> <a href="/Admin/admin/posts/index.html">Login</a> </button> -->
-            <button> <a href="Admin/admin/posts/index.html">Login</a> </button>
+            <button id="lgnbtn"> Login </button>
             <div class="member">
                 You have no Account ? <a href="signup.html">Sign up Here</a>
             </div>
         </div>
+
+        <div class="" id="result-box">
+            <h3 class="" id="result"></h3>
+        </div>
     </section>
 
     <!-- Link To JS -->
-    <script src="./js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+    <script type="module" src="./js/form.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+  
 </body>
 
 </html>

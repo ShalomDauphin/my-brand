@@ -849,3 +849,18 @@ input:focus {
         padding: 20px;
     }
 }
+
+
+/* result signup */
+
+#result-box{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14pt;
+    color: whitesmoke;
+}
+
+
