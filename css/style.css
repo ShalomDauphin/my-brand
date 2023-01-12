@@ -643,11 +643,16 @@ button {
     cursor: pointer;
     background: rgb(17, 107, 143);
 }
-
+button a{
+    color: #fff;
+    cursor: pointer;
+}
 button:hover {
     background: var(--hover);
 }
-
+button a:hover {
+    background: var(--hover);
+}
 input:focus {
     border: 1px solid rgb(192, 192 192);
 }
