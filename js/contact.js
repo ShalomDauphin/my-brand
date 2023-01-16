@@ -29,16 +29,45 @@ function submitForm(e) {
 
     saveMessage(names, emailid, msgContent)
 
+    // validate
+
+    
+        if (document.myForm.name.value == "") {
+            alert("Please provide your name!");
+            document.myForm.name.focus();
+            return false;
+        } else if (document.myForm.email.value == "") {
+            alert("Please provide your Email!");
+            document.myForm.email.focus();
+            return false;
+        } else if (document.myForm.msgContent.value == "") {
+            alert("Please Provide the message!");
+            document.myForm.msgContent.focus();
+            return false;
+        }
+        else {
+            // enable alert
+            document.querySelector(".alert").style.display = "block";
+
+            // remove the alert
+            setTimeout(() => {
+                document.querySelector(".alert").style.display = "none";
+            }, 3000);
+
+            // reset the form
+            // document.getElementById("contactForm").reset();
+        }
+    document.getElementById("contactForm").reset();
     // enable alert
-    document.querySelector(".alert").style.display = "block";
+    // document.querySelector(".alert").style.display = "block";
 
     // remove the alert
-    setTimeout(() => {
-        document.querySelector(".alert").style.display = "none";
-    }, 3000);
+    // setTimeout(() => {
+    //     document.querySelector(".alert").style.display = "none";
+    // }, 3000);
 
     // reset the form
-    document.getElementById("contactForm").reset();
+    // document.getElementById("contactForm").reset();
 }
 
 const saveMessage = (names, emailid, msgContent) => {
