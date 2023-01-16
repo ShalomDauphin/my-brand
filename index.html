@@ -44,9 +44,9 @@
     
     <section class="home" id="home">
         <div class="social">
-            <a href="#"><i class="bx bxl-github"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/ShalomDauphin"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a>
         </div>
         <div class="home-img">
             <img src="img/11.png" alt="" />
@@ -99,7 +99,7 @@
                         <span>shalomdauphin8@gmail.com</span>
                     </div>
                 </div>
-                <a href="#" class="btn">Download Cv</a>
+                <a href="cv/Nyarwaya's Resume.pdf" download class="btn">Download Cv</a>
             </div>
         </div>
     </section>
@@ -293,14 +293,15 @@
         <span>Connect With Us</span>
     </div>
     <div class="contact-form">
-        <form action="" id="contactForm" onsubmit="sendEmail()">
+        <form name="myForm" action="" id="contactForm">
+            <!-- <form name="myForm" action="" id="contactForm" onsubmit="validate()"></form> -->
             <div class="alert">Message sent Successfully!</div>
 
 
-            <input type="text" id="name" placeholder="Your Name" />
-            <input type="email" name="" id="email" placeholder="Your Email" />
-            <textarea name="" id="msgContent" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
-            <input type="submit" value="Submit" class="contact-button" />
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <input type="email" name="email" id="email" placeholder="Your Email" />
+            <textarea name="msgContent" id="msgContent"  cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+            <input type="submit" value="Submit" class="contact-button"  />
         </form>
     </div>
 </section>
@@ -319,6 +320,7 @@
 <script src="./js/contact.js"></script>
 <script src="./js/script.js"></script>
 <!-- <script src="./js/mail.js"></script> -->
-<script src="./js/sendmail.js"></script>
+<script src="./js/validate.js"></script>
+<!-- <script src="./js/sendmail.js"></script> -->
 </body>
 </html>

@@ -5,13 +5,19 @@ import {getDatabase, set, ref} from "https://www.gstatic.com/firebasejs/9.15.0/f
 
 
   const firebaseConfig = {
-    apiKey: "AIzaSyDeudG46HZgxssELLQgmv7J9P4XKg1HZ2w",
-    authDomain: "signup-7e854.firebaseapp.com",
-    databaseURL: "https://signup-7e854-default-rtdb.firebaseio.com",
-    projectId: "signup-7e854",
-    storageBucket: "signup-7e854.appspot.com",
-    messagingSenderId: "566819141176",
-    appId: "1:566819141176:web:4a9564d3d00c5ac61418cd"
+    // apiKey: "AIzaSyDeudG46HZgxssELLQgmv7J9P4XKg1HZ2w",
+    // authDomain: "signup-7e854.firebaseapp.com",
+    // databaseURL: "https://signup-7e854-default-rtdb.firebaseio.com",
+    // projectId: "signup-7e854",
+    // storageBucket: "signup-7e854.appspot.com",
+    // messagingSenderId: "566819141176",
+    // appId: "1:566819141176:web:4a9564d3d00c5ac61418cd"
+    apiKey: "AIzaSyBHJaSDsOpneMcMfFK8uYYTaDhKjcZfkUY",
+    authDomain: "login-signup-d11d8.firebaseapp.com",
+    projectId: "login-signup-d11d8",
+    storageBucket: "login-signup-d11d8.appspot.com",
+    messagingSenderId: "113980751877",
+    appId: "1:113980751877:web:a3a2d88456fbb8c6d15c6c"
   };
 
   // Initialize Firebase
@@ -37,11 +43,12 @@ signbtn.addEventListener('click', (e) => {
       set(ref(database, 'users/' + user.uid),{
       
           email: email,
-          names: names,
+        names: names,
+          password: password
       })
 
         alert('user created!');
-        window.open("Admin/admin/posts/index.html");
+        window.open("login.html");
       // ...
     })
     .catch((error) => {
